@@ -1,1 +1,0 @@
-namespace Authservice.Domain.Interfaces.Interfaces;

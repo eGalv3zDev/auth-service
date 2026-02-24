@@ -1,8 +1,7 @@
-// Estas librerias nos ayudan para manejar la base de datos
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AuthService.Domain.Entities.UserProfile;
+namespace AuthService.Domain.Entities;
 
 public class UserProfile
 {
@@ -12,12 +11,12 @@ public class UserProfile
 
     [Required]
     [MaxLength(16)]
-    [ForeignKey(nameof(User))]
+    [ForeignKey(nameof(User))] // Llave foranea hacia la entidad User
     public string UserId { get; set; } = string.Empty;
 
-    public string ProfilePictureUrl { get; set; }
-    public string Bio { get; set; }
-    public DateTime DateOfBirth { get; set; }
-    
-    public User User { get; set; } = null;
+    public string ProfilePictureUrl { get; set; } = null!;
+    public string Bio { get; set; } = string.Empty;
+    public DateTime DateOfBirth { get; set; } 
+
+    public User User { get; set; } = null!;
 }

@@ -1,8 +1,8 @@
-// nombre del espacio de trabajo
-namespace Authservice.Domain.Enums.UserRole;
+// Espacio de nombres para las enumeraciones relacionadas con el servicio 
+//de autenticación
+namespace AuthService.Domain.Enums;
 
-// Enumeracion de roles de usuario
-// cada valor tiene un valor numerico
+//Enumeración para los roles de usuario en el sistema de autenticación
 public enum UserRole
 {
     User = 0,
