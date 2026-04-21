@@ -30,3 +30,4 @@ public class Role
 // | USER         | User         | Usuario normal   |
 // | GUEST        | Guest        | Invitado         |
 // +--------------+--------------+------------------+
+
